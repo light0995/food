@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+    
+    <div class="overlay"></div>
+
+    <div class="hamburger">
+        <div class="hamburger__toggle">
+            <div class="hamburger__line"></div>
+            <div class="hamburger__line"></div>
+            <div class="hamburger__line"></div>
+        </div>
+
+        <div class="hamburger__inner">
+            <div data-close class="hamburger__close"></div>
+            <div class="hamburger__block">
+                <div class="hamburger__logo"><img src="./icons/logo.svg" alt="logo"></div>
+                <ul class="hamburger__list">
+                    <li class="hamburger__list-item"><a class="hamburger__list-link">Доставка питания</a></li>
+                    <li class="hamburger__list-item"><a class="hamburger__list-link">Второй пункт</a></li>
+                </ul>
+                <button data-modal class="btn btn_white hamburger__btn">Связаться с нами</button>
+            </div>
+        </div>
+        
+
+    </div>
+
+    <div class="modal">
+        <div class="modal__overlay"></div>
+        <div class="modal__window">
+            <div class="modal__close"></div>
+
+            <div class="modal__inner modal__inner-active">
+                <h2 class="title modal__title">Мы свяжемся с вами как можно быстрее!</h2>
+                <form class="modal__form">
+                    <input required name="name" type="text" class="order__input modal__input" placeholder="Ваше имя">
+                    <input required name="phone" type="phone" class="order__input modal__input" placeholder="Ваш номер телефона">
+                    <button class="btn btn_dark modal__btn">Перезвоните мне</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <header class="header">
+        <div class="header__left-block">
+            <div class="header__logo">
+                <img src="./icons/logo.svg" alt="logo"></div>
+            <nav class="header__left-links">
+                <a class="header__left-link">Доставка питания</a>
+                <a class="header__left-link">Второй пункт</a>
+            </nav>
+        </div>
+
+        <div class="header__right-block">
+            <button data-modal class="btn btn_white">Связаться с нами</button>
+
+        </div>
+
+
+
+
+    </header>
+
+
+
+
+
+    <div class="sidepanel">
+        <div class="sidepanel__text"><span>Социальные сети</span></div>
+        <div class="sidepanel__line"></div>
+        <div class="sidepanel__social">
+            <a href="#" class="sidepanel__icon"><img src="./icons/instagram.svg" alt="instagram"></a>
+            <a href="#" class="sidepanel__icon"><img src="./icons/facebook.svg" alt="facebook"></a>
+        </div>
+    </div>
+
+
+
+    <div class="preview">
+        <div class="container">
+            <div class="preview__wrapper">
+                <div class="preview__meals preview__meals-active">
+                    <div class="preview__meals-img"><img src="./img/tabs/vegy.jpg" alt="vegy"></div>
+                    <div class="preview__meals-descr">
+                        Меню "Фитнес" - это новый подход к приготовлению блюд: больше свежих овощей и фруктов. 
+                        Для людей, которые интересуются спортом; активных и здоровых. Это абсолютно новый продукт 
+                        с оптимальной ценой и высоким качеством!
+        
+                    </div>
+                </div>
+
+                <div class="preview__meals">
+                    <div class="preview__meals-img"><img src="./img/tabs//elite.jpg" alt="elite"></div>
+                    <div class="preview__meals-descr">
+                        Меню “Премиум” - мы используем не только красивый дизайн упаковки, но и качественное исполнение блюд. 
+                        Красная рыба, морепродукты, фрукты - ресторанное меню без похода в ресторан!
+
+        
+                    </div>
+                </div>
+
+                <div class="preview__meals">
+                    <div class="preview__meals-img"><img src="./img/tabs/post.jpg" alt="post"></div>
+                    <div class="preview__meals-descr">
+                        Наше специальное “Постное меню” - это тщательный подбор ингредиентов: полное отсутствие продуктов животного 
+                        происхождения. Полная гармония с собой и природой в каждом элементе! Все будет Ом!
+
+        
+                    </div>
+                </div>
+
+                <div class="preview__meals">
+                    <div class="preview__meals-img"><img src="./img/tabs/vegy.jpg" alt="vegy"></div>
+                    <div class="preview__meals-descr">
+                        Меню "Сбалансированное" - это соответствие вашего рациона всем научным рекомендациям. Мы тщательно просчитываем
+                        вашу потребность в к/б/ж/у и создаем лучшие блюда для вас.
+
+        
+                    </div>
+                </div>
+
+
+                <div class="preview__menu">
+                    <div class="preview__menu-title">Выберите стиль питания</div>
+                    <ul class="preview__list">
+                        <li class="preview__list-item preview__list-item-active">Фитнес</li>
+                        <li class="preview__list-item">Премиум</li>
+                        <li class="preview__list-item">Постное</li>
+                        <li class="preview__list-item">Сбалансированное</li>
+            
+                    </ul>
+                </div>
+            </div>
+
+            <div class="preview__subtitle">Живи полной жизнью!</div>
+
+        </div>
+        <div class="bg_blue"></div>
+
+    </div>
+
+
+
+
+
+
+    <section class="offer">
+        <div class="bgc_y"></div>
+        <div class="divider offer__divider"></div>
+
+        <div class="container container-first">
+            <div class="offer__text">
+                <h2 class="title offer__title">Что мы можем вам предложить?</h2>
+                <div class="offer__descr">Наша основная идея - это правильное питание. Оно может быть
+                     простым и вкусным. Мы не просто доставка, мы сервис! Мы взяли на себя все расчеты
+                      БЖУ, калорийности, объемов порций и прочие важные, но скучные аспекты. Вам 
+                      остается только полезная, сытная и правильная еда, которую мы привозим прямо под
+                       дверь.
+                </div>
+            </div>
+
+    
+            <div class="offer__action">
+                <button data-modal class="btn btn_dark offer__btn">Связаться с нами</button>
+            </div>
+        </div>
+
+
+
+
+                    
+        <div class="container">
+            <div class="offer__advantages">
+            <h2 class="offer__advantages-title">Быстро и полезно</h2>
+            <div class="offer__advantages-text">
+                Готовка дома занимает много сил, времени и нервов. Мы привозим еду сразу на
+                 целый день, и ты можешь действовать так, как тебе удобно, не подстраиваясь ни 
+                 под кого и будучи уверенным в качестве продукта!
+            </div>
+
+            <h2 class="offer__advantages-title">Правильный рацион</h2>
+            <div class="offer__advantages-text">
+                Мы разработали специальное меню, где учтены все нюансы правильного питания,
+                 от баланса БЖУ до их приготовления и дробления рациона.
+            </div>
+            </div>
+
+
+
+            <div class="offer__slider">
+                <div class="offer__slider-counter">
+                    <div class="offer__slider-prev"></div>
+                    <span class="current__slider-num">03</span>
+                    /
+                    <span class="total__slider-num">04</span>
+                    <div class="offer__slider-next"></div>
+                </div>
+
+                <div class="offer__slider-wrapper">
+                    <div class="offer__sliders">
+                            <img class="offer__slider-img offer__slider-img-active" src="./img/slider/pepper.jpg" alt="pepper">
+                            <img class="offer__slider-img" src="./img/slider/food-12.jpg" alt="food12">
+                            <img class="offer__slider-img" src="./img/slider/olive-oil.jpg" alt="olive">
+                            <img class="offer__slider-img" src="./img/slider/paprika.jpg" alt="paprika">
+                    </div>
+                    <div class="offer__slider-navigation">
+                    
+                    </div>
+                </div>
+
+            </div>
+    
+
+
+
+
+
+        </div>
+    </section>
+
+
+
+
+    <section class="calculating">
+        <div class="container">
+            <div class="divider"></div>
+        <h2 class="title calculating__title">Рассчитаем вашу потребность в калориях?</h2>
+
+        <div class="calculating__field">
+
+            <div class="calculating__subtitle">Ваш пол</div>
+            <div class="calculating__choose">
+                <div class="calculating__choose-item">Женщина</div>
+                <div class="calculating__choose-item">Мужчина</div>
+            </div>
+
+            <div class="calculating__subtitle">Ваша конституция</div>
+            <div class="calculating__choose calculating__choose-medium">
+                <input type="text" placeholder="Введите рост" class="calculating__choose-item"></input>
+                <input type="text" placeholder="Введите вес" class="calculating__choose-item"></input>
+                <input type="text" placeholder="Введите возраст" class="calculating__choose-item"></input>
+            </div>
+
+            <div class="calculating__subtitle">Ваша конституция</div>
+            <div class="calculating__choose calculating__choose-big">
+                <div class="calculating__choose-item">Низкая активность</div>
+                <div class="calculating__choose-item">Невысокая активность</div>
+                <div class="calculating__choose-item">Умеренная активность</div>
+                <div class="calculating__choose-item">Высокая активность</div>
+            </div>
+
+
+            <div class="divider calculating__divider"></div>
+
+            <div class="calculating__total">
+                <div class="calculating__subtitle calculating__total-subtitle">Ваша суточная норма калорий:</div>
+                <div class="calculating__result">
+                    <span>2700</span>
+                    ккал
+                </div>
+            </div>
+
+
+        </div>
+
+
+        </div>
+    </section>
+
+
+
+    <section class="menu">
+        <div class="container">
+            <div class="divider"></div>
+            <h2 class="title menu__title">Наше меню на день</h2>
+
+            <div class="menu__field">
+                
+            </div>
+
+        </div>
+    </section>
+
+
+
+
+    <section class="order">
+        <div class="container">
+            <div class="title order__title">Заказывай пробный день прямо сейчас!</div>
+            <form class="order__form">
+                <input type="text" required name="name" placeholder="Ваше имя" class="order__input">
+                <input type="phone" required name="phone" placeholder="Ваш номер телефона" class="order__input">
+                <div class="order__icon"><img src="./icons/right.svg" alt="right"></div>
+                <button class="btn btn_dark order__btn">Перезвонить мне</button>
+            </form>
+
+
+
+
+
+
+        </div>
+    </section>
+
+
+
+    <section class="promotion">
+        <div class="bgc_y"></div>
+        <div class="divider"></div>
+        <div class="container">
+            <div class="promotion__text">
+                <div class="title promotion__title">Акция для новых клиентов!</div>
+                <div class="promotion__descr">Мы ценим каждого клиента и предлагаем вам стать одним из них на очень выгодных условиях. 
+                    Каждому, кто закажет доставку питание на неделю, будет предоставлена скидка в размере <span>20%!</span>
+                    <br>
+                    <br>
+                    Акция закончится 20 мая в 00:00</div>
+
+
+            </div>
+
+            <div class="promotion__timer">
+                <div class="title promotion__title">Осталось до конца акции:</div>
+                <div class="promotion__timer-wrapper">
+                    <div id="days" class="promotion__timer-item"><span>00</span>дней</div>
+                    <div id="hours" class="promotion__timer-item"><span>00</span>часов</div>
+                    <div id="minutes" class="promotion__timer-item"><span>00</span>минут</div>
+                    <div id="seconds" class="promotion__timer-item"><span>00</span>секунд</div>
+                </div>
+            </div>
+
+
+
+
+        </div>
+    </section>
+
+
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__block">
+                <div class="footer__text">Мы в социальных сетях:</div>
+                <div class="footer__social"><a href="#">instagram</a></div>
+                <div class="footer__social"><a href="#">facebook</a></div>
+            </div>
+            
+            <div class="footer__icon"><img src="./icons/veg.svg" alt="veg"></div>
+
+            <div class="footer__block">
+                <div class="footer__text">Или позвоните нам</div>
+                <div class="footer__phone"><a href="#">+380678341034</a></div>
+                <div class="footer__phone"><a href="#">+380500941356</a></div>
+            </div>
+
+
+        </div>
+    </footer>
+
+
+<!-- <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script> -->
+    <script src="js/script.js"></script>
+    <!-- <script src="js/main.js"></script> -->
+
+</body>
+</html>
