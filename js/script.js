@@ -361,7 +361,7 @@ const currentSlideNum = document.querySelector('.current__slider-num');
 const totalSlideNum = document.querySelector('.total__slider-num');
 const slidesField = document.querySelector('.offer__sliders');
 const slidesWrapper = document.querySelector('.offer__slider-wrapper'),
-width = window.getComputedStyle(slidesWrapper).width;
+width = Math.round(parseFloat(window.getComputedStyle(slidesWrapper).width));
 let currentIndex = 1;
 let offset = 0;
 const sliderNavigation = document.querySelector('.offer__slider-navigation')
@@ -380,7 +380,8 @@ const sliderNavigationItems = document.querySelectorAll('.offer__slider-navigati
 slidesField.style.width = 100 * slides.length + '%';
 currentSlideNum.innerHTML = checkZero(currentIndex);
 navigationChange(sliderNavigationItems, currentIndex -1);
-widthNum = width.replace(/\D/g, '');
+// widthNum = width.replace(/\D/g, '');
+
 
 
 
@@ -400,12 +401,14 @@ function navigationChange (navigationItems, index) {
 };
 
 
+
+
 next.addEventListener('click', () => {
-  if (offset === +widthNum * (slides.length - 1)) {
+  if (offset === width * (slides.length - 1)) {
     offset = 0;
     currentIndex = 1;
   } else {
-    offset += +widthNum
+    offset += width
     currentIndex ++;
   };
 
@@ -418,10 +421,10 @@ next.addEventListener('click', () => {
 
 prev.addEventListener('click', () => {
   if (offset === 0) {
-    offset = widthNum * (slides.length - 1);
+    offset = width * (slides.length - 1);
     currentIndex = slides.length;
   } else {
-    offset -= widthNum;
+    offset -= width;
     currentIndex --;
   };
 
@@ -435,7 +438,7 @@ prev.addEventListener('click', () => {
 sliderNavigationItems.forEach((item, index) => {
   item.addEventListener('click', (e) => {
     const slideTo = e.target.getAttribute('data-slide-to');
-    offset = widthNum * (slideTo - 1);
+    offset = width * (slideTo - 1);
 
     
     currentIndex = slideTo;
