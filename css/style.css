@@ -441,6 +441,7 @@ a {
   border-style: none;
   text-align: center;
 }
+
 .calculating__choose-item-active {
   background-color: rgb(84, 237, 57);
   color: #fff;
@@ -804,7 +805,7 @@ a {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  top: 20px;
+  top: 30%;
 }
 .modal__close {
   position: absolute;
@@ -1060,6 +1061,8 @@ a {
   .calculating__field {
     margin-top: 10px;
   }
+  
+
   .calculating__choose {
     margin-top: 15px;
   }
@@ -1072,6 +1075,8 @@ a {
   .calculating__choose-big {
     width: 520px;
   }
+
+
   .calculating__result span {
     font-size: 30px;
   }
