@@ -477,10 +477,10 @@ function getStaticInformation (parentSelector, activeClass) {
 
   elements.forEach(item => {
     item.addEventListener('click', (e) => {
-          if (e.target.getAttribute(`data-ratio`)) {
-      ratio = +e.target.getAttribute(`data-ratio`);
-    } else {
-      sex = e.target.getAttribute(`id`);
+      if (e.target.getAttribute(`data-ratio`)) {
+        ratio = +e.target.getAttribute(`data-ratio`);
+       } else {
+        sex = e.target.getAttribute(`id`);
     };
 
     elements.forEach(item => item.classList.remove(activeClass));
