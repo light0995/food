@@ -1249,8 +1249,12 @@ a {
     width: 100%;
     font-size: 12px;
     padding-left: 5px;
-    padding-right: 5px;
+    padding-right: 5px; 
   }
+
+
+  
+
   .calculating__total {
     width: 100%;
     padding-left: 15px;
